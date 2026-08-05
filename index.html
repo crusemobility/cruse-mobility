@@ -1,89 +1,117 @@
 <!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CRuse Mobility – Dein persönlicher Mobilitätspartner</title>
-<meta name="description" content="Fahrzeugvermittlung, Leasingberatung und Gutachtervermittlung – persönlich, transparent und markenunabhängig.">
-<link rel="icon" href="cruse-logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRuse Mobility – Mobilität. Neu gedacht.</title>
+  <meta name="description" content="Fahrzeugvermittlung, Leasing und Gutachterservice – transparent, unabhängig und deutschlandweit.">
+  <link rel="icon" href="cruse-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="header">
-<a class="brand" href="#start"><img src="cruse-logo.png" alt="CRuse Mobility Logo"></a>
-<button class="menu-toggle" aria-expanded="false">Menü</button>
-<nav id="main-nav">
-<a href="#leistungen">Leistungen</a><a href="#ablauf">Ablauf</a><a href="#warum">Warum wir</a><a href="#kontakt" class="nav-cta">Kontakt</a>
-</nav>
+<header class="topbar">
+  <a class="logo" href="#start"><img src="cruse-logo.png" alt="CRuse Mobility"></a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="mainnav">☰</button>
+  <nav id="mainnav">
+    <a href="#leistungen">Leistungen</a>
+    <a href="#warum">Über uns</a>
+    <a href="#ablauf">Ablauf</a>
+    <a href="#kontakt">Kontakt</a>
+    <a class="top-cta" href="#kontakt">Anfrage starten</a>
+  </nav>
 </header>
 
 <main>
 <section class="hero" id="start">
-<div class="hero-overlay"></div>
-<div class="hero-content reveal visible">
-<p class="kicker">Persönlich · unabhängig · deutschlandweit</p>
-<h1>Dein persönlicher<br><em>Mobilitätspartner.</em></h1>
-<p class="lead">Fahrzeugvermittlung, Leasing und Gutachterservice – transparent, zuverlässig und ohne unnötige Umwege.</p>
-<div class="actions"><a href="#kontakt" class="btn btn-gold">Kostenlos anfragen</a><a href="#leistungen" class="btn btn-ghost">Leistungen entdecken</a></div><p class="hero-note">Persönliche Beratung · Keine Massenabfertigung · Klare Kommunikation</p>
-</div>
-<div class="hero-facts reveal visible">
-<div><strong>100 %</strong><span>markenunabhängig</span></div>
-<div><strong>1</strong><span>fester Ansprechpartner</span></div>
-<div><strong>DE</strong><span>deutschlandweite Vermittlung</span></div>
-</div>
+  <div class="hero-overlay"></div>
+  <div class="hero-grid">
+    <div class="hero-copy reveal visible">
+      <p class="eyebrow">Ihr persönlicher Mobilitätspartner</p>
+      <h1>Mobilität.<br><span>Neu gedacht.</span></h1>
+      <p class="lead">Fahrzeugvermittlung, Leasing und Gutachterservice – transparent, unabhängig und deutschlandweit.</p>
+      <div class="cta-row">
+        <a class="button gold" href="#kontakt">Anfrage starten <span>→</span></a>
+        <a class="button outline" href="#leistungen">Leistungen ansehen <span>→</span></a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="trustbar"><span>Markenunabhängig</span><span>Persönliche Betreuung</span><span>Transparente Beratung</span><span>Schnelle Rückmeldung</span></section>
-
-<section class="section reveal" id="leistungen">
-<div class="section-head"><p class="kicker">Unsere Leistungen</p><h2>Mobilität, die zu dir passt.</h2><p>Ob Wunschfahrzeug, Leasingangebot oder schnelle Unterstützung nach einem Unfall – du erhältst eine persönliche und klare Lösung.</p></div>
-<div class="service-grid">
-<article class="service-card"><span class="number">01</span><h3>Fahrzeugvermittlung</h3><p>Du nennst uns Budget, Wunschmodell und Anforderungen. Wir suchen passende Angebote bei ausgewählten Partnern.</p><a href="#kontakt">Fahrzeug anfragen</a></article>
-<article class="service-card"><span class="number">02</span><h3>Leasingberatung</h3><p>Privat oder gewerblich: Wir vergleichen Konditionen und achten auf Rate, Laufzeit, Sonderzahlung und Gesamtkosten.</p><a href="#kontakt">Leasing anfragen</a></article>
-<article class="service-card"><span class="number">03</span><h3>Gutachtervermittlung</h3><p>Nach einem unverschuldeten Unfall vermitteln wir dich schnell an einen unabhängigen Kfz-Sachverständigen.</p><a href="#kontakt">Gutachter anfragen</a></article>
-</div>
+<section class="services reveal" id="leistungen">
+  <article><span class="num">01</span><h3>Fahrzeugvermittlung</h3><p>Wir finden dein Wunschfahrzeug – schnell, zuverlässig und passend zu deinem Budget.</p><a href="#kontakt">→</a></article>
+  <article><span class="num">02</span><h3>Leasing</h3><p>Maßgeschneiderte Leasingangebote für Privat- und Geschäftskunden.</p><a href="#kontakt">→</a></article>
+  <article><span class="num">03</span><h3>Gutachterservice</h3><p>Unabhängige Gutachtervermittlung nach einem unverschuldeten Unfall.</p><a href="#kontakt">→</a></article>
+  <article><span class="num">04</span><h3>Persönliche Betreuung</h3><p>Ein fester Ansprechpartner von der ersten Anfrage bis zur Lösung.</p><a href="#kontakt">→</a></article>
 </section>
 
-<section class="section process reveal" id="ablauf">
-<div class="section-head"><p class="kicker">So funktioniert's</p><h2>Einfach. Persönlich. Ohne Umwege.</h2></div>
-<div class="steps">
-<article><span>1</span><h3>Anfrage senden</h3><p>Du beschreibst kurz dein Anliegen und deine Wünsche.</p></article>
-<article><span>2</span><h3>Wir kümmern uns</h3><p>Wir prüfen passende Angebote oder stellen den Kontakt zum Gutachter her.</p></article>
-<article><span>3</span><h3>Persönliche Rückmeldung</h3><p>Du erhältst eine individuelle Lösung und entscheidest in Ruhe.</p></article>
-</div>
+<section class="why reveal" id="warum">
+  <div class="why-image"><img src="car-detail.jpg" alt="Schwarzes Sportcoupé"></div>
+  <div class="why-copy">
+    <p class="eyebrow">Warum CRuse Mobility?</p>
+    <h2>Persönlich. Unabhängig.<br>Deutschlandweit.</h2>
+    <div class="checks">
+      <span>Persönlicher Ansprechpartner</span>
+      <span>Transparente Prozesse</span>
+      <span>Markenunabhängige Beratung</span>
+      <span>Schnelle Rückmeldung</span>
+      <span>Deutschlandweite Vermittlung</span>
+      <span>Klare Kommunikation</span>
+    </div>
+  </div>
+  <aside class="stats">
+    <div><strong>100 %</strong><span>markenunabhängig</span></div>
+    <div><strong>1</strong><span>fester Ansprechpartner</span></div>
+    <div><strong>DE</strong><span>deutschlandweit</span></div>
+  </aside>
 </section>
 
-<section class="section why reveal" id="warum">
-<div class="why-copy"><p class="kicker">Warum CRuse Mobility?</p><h2>Keine Massenabfertigung.<br>Keine leeren Versprechen.</h2><p>CRuse Mobility steht für persönliche Erreichbarkeit, klare Kommunikation und markenunabhängige Lösungen.</p></div>
-<div class="why-list">
-<div><strong>Persönlich</strong><span>Direkter Kontakt statt anonymer Plattform.</span></div>
-<div><strong>Unabhängig</strong><span>Markenübergreifende Auswahl im Kundeninteresse.</span></div>
-<div><strong>Transparent</strong><span>Klare Informationen zu Kosten und Ablauf.</span></div>
-<div><strong>Zuverlässig</strong><span>Verbindliche Rückmeldung und klare Prozesse.</span></div>
-</div>
+<section class="flow reveal" id="ablauf">
+  <p class="eyebrow">So läuft es ab</p>
+  <div class="flow-grid">
+    <article><strong>01</strong><h3>Anfrage</h3><p>Du sendest deine Anfrage über das Kontaktformular.</p></article>
+    <article><strong>02</strong><h3>Beratung</h3><p>Wir besprechen Wünsche, Budget und Anforderungen.</p></article>
+    <article><strong>03</strong><h3>Angebot</h3><p>Du erhältst passende Optionen und entscheidest in Ruhe.</p></article>
+    <article><strong>04</strong><h3>Abschluss</h3><p>Wir begleiten dich bis zur erfolgreichen Vermittlung.</p></article>
+  </div>
 </section>
 
-<section class="section contact reveal" id="kontakt">
-<div class="contact-copy"><p class="kicker">Kostenlose Anfrage</p><h2>Was können wir für dich tun?</h2><p>Beschreibe kurz dein Anliegen. Wir melden uns persönlich und unverbindlich zurück.</p><div class="contact-data"><a href="mailto:info@cruse-mobility.com">info@cruse-mobility.com</a><span>Postplatz 2 · 74564 Crailsheim</span></div></div>
-<form action="https://formsubmit.co/info@cruse-mobility.com" method="POST">
-<input type="hidden" name="_subject" value="Neue Anfrage über cruse-mobility.de"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_template" value="table">
-<div class="field-row"><label>Name<input name="Name" required></label><label>E-Mail<input type="email" name="E-Mail" required></label></div>
-<div class="field-row"><label>Telefon<input type="tel" name="Telefon"></label><label>Anliegen<select name="Anliegen" required><option value="">Bitte auswählen</option><option>Fahrzeugvermittlung</option><option>Leasingberatung</option><option>Gutachtervermittlung</option><option>Kooperation / Partner werden</option><option>Sonstiges</option></select></label></div>
-<label>Nachricht<textarea name="Nachricht" rows="6" required></textarea></label>
-<label class="consent"><input type="checkbox" required><span>Ich stimme der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage zu.</span></label>
-<button class="btn btn-gold submit" type="submit">Kostenlose Anfrage senden</button>
-<p class="form-note">Beim ersten Test sendet FormSubmit eine Aktivierungs-E-Mail an info@cruse-mobility.com.</p>
-</form>
+<section class="contact reveal" id="kontakt">
+  <div class="contact-copy">
+    <p class="eyebrow">Kontakt</p>
+    <h2>Anfrage starten.</h2>
+    <p>Beschreibe dein Anliegen. Wir melden uns persönlich und unverbindlich zurück.</p>
+    <a href="mailto:info@cruse-mobility.com">info@cruse-mobility.com</a>
+    <span>Postplatz 2 · 74564 Crailsheim</span>
+  </div>
+  <form action="https://formsubmit.co/info@cruse-mobility.com" method="POST">
+    <input type="hidden" name="_subject" value="Neue Anfrage über cruse-mobility.de">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <div class="field-row">
+      <label>Name<input name="Name" required></label>
+      <label>E-Mail<input type="email" name="E-Mail" required></label>
+    </div>
+    <div class="field-row">
+      <label>Telefon<input type="tel" name="Telefon"></label>
+      <label>Anliegen<select name="Anliegen" required><option value="">Bitte auswählen</option><option>Fahrzeugvermittlung</option><option>Leasing</option><option>Gutachterservice</option><option>Kooperation</option><option>Sonstiges</option></select></label>
+    </div>
+    <label>Nachricht<textarea name="Nachricht" rows="6" required></textarea></label>
+    <label class="consent"><input type="checkbox" required><span>Ich stimme der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage zu.</span></label>
+    <button class="button gold submit" type="submit">Anfrage senden</button>
+    <p class="note">Beim ersten Test sendet FormSubmit eine Aktivierungs-E-Mail an info@cruse-mobility.com.</p>
+  </form>
 </section>
 </main>
 
 <footer>
-<div class="footer-brand"><strong>CRuse Mobility</strong><span>Mobilität. Einfach vermittelt.</span></div>
-<div><strong>Kontakt</strong><a href="mailto:info@cruse-mobility.com">info@cruse-mobility.com</a><span>Postplatz 2</span><span>74564 Crailsheim</span></div>
-<div><strong>Rechtliches</strong><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
-<p>© <span id="year"></span> CRuse Mobility</p>
+  <div><img src="cruse-logo.png" alt="CRuse Mobility"><span>Mobilität. Neu gedacht.</span></div>
+  <div><strong>Kontakt</strong><a href="mailto:info@cruse-mobility.com">info@cruse-mobility.com</a><span>Postplatz 2</span><span>74564 Crailsheim</span></div>
+  <div><strong>Rechtliches</strong><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+  <p>© <span id="year"></span> CRuse Mobility</p>
 </footer>
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>
