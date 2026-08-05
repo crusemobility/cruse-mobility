@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRuse Mobility – Mobilität. Einfach vermittelt.</title>
+  <meta name="description" content="CRuse Mobility vermittelt Fahrzeuge, Leasingangebote und unabhängige Kfz-Gutachter – persönlich, schnell und markenunabhängig.">
+  <link rel="icon" href="assets/cruse-logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#start" aria-label="CRuse Mobility Startseite">
+      <img src="assets/cruse-logo.png" alt="CRuse Mobility Logo">
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#vorteile">Vorteile</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="start">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Persönlich. Markenunabhängig. Direkt.</p>
+        <h1>Mobilität.<br><span>Einfach vermittelt.</span></h1>
+        <p class="hero-text">
+          Dein Ansprechpartner für Fahrzeugvermittlung, Leasingangebote
+          und die schnelle Vermittlung eines unabhängigen Kfz-Gutachters.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#kontakt">Jetzt unverbindlich anfragen</a>
+          <a class="button secondary" href="#leistungen">Leistungen ansehen</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="CRuse Mobility Kernleistungen">
+        <div>
+          <span>01</span>
+          <strong>Fahrzeugvermittlung</strong>
+          <small>Passende Angebote statt endloser Suche.</small>
+        </div>
+        <div>
+          <span>02</span>
+          <strong>Leasingvermittlung</strong>
+          <small>Privat und Gewerbe, klar verglichen.</small>
+        </div>
+        <div>
+          <span>03</span>
+          <strong>Gutachtervermittlung</strong>
+          <small>Schnelle Hilfe nach einem Unfall.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="leistungen">
+      <div class="section-heading">
+        <p class="eyebrow">Unsere Leistungen</p>
+        <h2>Ein Ansprechpartner für deine Mobilität.</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="icon">🚗</div>
+          <h3>Fahrzeugvermittlung</h3>
+          <p>Du nennst uns Budget, Wunschmodell und Anforderungen. Wir suchen passende Kauf- oder Leasingangebote bei unseren Partnern.</p>
+          <a href="#kontakt">Fahrzeug anfragen →</a>
+        </article>
+
+        <article class="card">
+          <div class="icon">📄</div>
+          <h3>Gutachtervermittlung</h3>
+          <p>Nach einem unverschuldeten Unfall vermitteln wir dich schnell an einen unabhängigen Kfz-Sachverständigen.</p>
+          <a href="#kontakt">Gutachter anfragen →</a>
+        </article>
+
+        <article class="card">
+          <div class="icon">🤝</div>
+          <h3>Persönliche Betreuung</h3>
+          <p>Keine anonyme Plattform. Du erhältst einen direkten Ansprechpartner vom ersten Kontakt bis zur passenden Lösung.</p>
+          <a href="#kontakt">Kontakt aufnehmen →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split" id="vorteile">
+      <div>
+        <p class="eyebrow">Warum CRuse Mobility?</p>
+        <h2>Klarer Service.<br>Keine komplizierten Wege.</h2>
+      </div>
+      <div class="benefits">
+        <div><strong>Unabhängig</strong><span>Markenübergreifende Auswahl im Interesse des Kunden.</span></div>
+        <div><strong>Schnell</strong><span>Kurze Wege und eine zügige Rückmeldung.</span></div>
+        <div><strong>Persönlich</strong><span>Ein direkter Ansprechpartner statt Callcenter.</span></div>
+        <div><strong>Transparent</strong><span>Klare Angebote ohne unnötiges Kleingedrucktes.</span></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="kontakt">
+      <div class="contact-copy">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Was können wir für dich tun?</h2>
+        <p>Beschreibe kurz dein Anliegen. Wir melden uns persönlich und unverbindlich zurück.</p>
+        <a class="mail-link" href="mailto:info@cruse-mobility.de">info@cruse-mobility.de</a>
+      </div>
+
+      <form class="contact-form" action="https://formsubmit.co/info@cruse-mobility.de" method="POST">
+        <input type="hidden" name="_subject" value="Neue Anfrage über cruse-mobility.de">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <label>
+          Name
+          <input type="text" name="Name" autocomplete="name" required>
+        </label>
+
+        <div class="form-row">
+          <label>
+            E-Mail
+            <input type="email" name="E-Mail" autocomplete="email" required>
+          </label>
+          <label>
+            Telefon
+            <input type="tel" name="Telefon" autocomplete="tel">
+          </label>
+        </div>
+
+        <label>
+          Anliegen
+          <select name="Anliegen" required>
+            <option value="">Bitte auswählen</option>
+            <option>Fahrzeugvermittlung</option>
+            <option>Leasingangebot</option>
+            <option>Gutachtervermittlung</option>
+            <option>Kooperation / Partner werden</option>
+            <option>Sonstiges</option>
+          </select>
+        </label>
+
+        <label>
+          Nachricht
+          <textarea name="Nachricht" rows="6" required></textarea>
+        </label>
+
+        <label class="consent">
+          <input type="checkbox" required>
+          <span>Ich stimme zu, dass meine Angaben zur Bearbeitung der Anfrage verwendet werden.</span>
+        </label>
+
+        <button class="button primary submit" type="submit">Anfrage senden</button>
+        <p class="form-note">
+          Hinweis: Beim ersten Test des Formulars sendet FormSubmit eine Bestätigungs-E-Mail an
+          info@cruse-mobility.de. Erst nach Bestätigung werden Anfragen zugestellt.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>CRuse Mobility</strong>
+      <span>Mobilität. Einfach vermittelt.</span>
+    </div>
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="mailto:info@cruse-mobility.de">E-Mail</a>
+    </div>
+    <p>© <span id="year"></span> CRuse Mobility</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
