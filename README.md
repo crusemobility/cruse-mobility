@@ -1,34 +1,12 @@
-# CRuse Mobility Website
+# CRuse Mobility V2
 
-Fertige statische Website für GitHub Pages.
+1. ZIP entpacken.
+2. Alle Dateien in dein GitHub-Repository hochladen und bestehende Dateien ersetzen.
+3. Commit changes.
+4. 1–3 Minuten warten und Website neu laden.
 
-## Dateien hochladen
-
-1. Repository `cruse-mobility` auf GitHub öffnen.
-2. **Add file → Upload files** wählen.
-3. Den Inhalt dieses Ordners hochladen:
-   - `index.html`
-   - `styles.css`
-   - `script.js`
-   - `impressum.html`
-   - `datenschutz.html`
-   - Ordner `assets`
-4. Änderungen mit **Commit changes** speichern.
-5. Unter **Settings → Pages** prüfen:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Ordner: `/ (root)`
-
-## Vor Veröffentlichung unbedingt ändern
-
-- In `impressum.html`: Name, Anschrift, Telefonnummer und ggf. USt-ID.
-- In `datenschutz.html`: Verantwortliche Daten ergänzen und rechtlich prüfen.
-- Kontaktformular testen. Beim ersten Absenden sendet FormSubmit eine Aktivierungs-E-Mail an `info@cruse-mobility.de`.
-- Optional Telefonnummer und WhatsApp-Link ergänzen.
-
-## Eigene Domain verbinden
-
-Später in GitHub unter **Settings → Pages → Custom domain**:
-`cruse-mobility.de`
-
-Die DNS-Einstellungen bei IONOS folgen erst im nächsten Schritt.
+Vor Veröffentlichung:
+- Im Impressum vollständigen Namen und Telefonnummer einsetzen.
+- Im Datenschutz vollständigen Namen einsetzen.
+- Normale Steuernummer nicht veröffentlichen.
+- Kontaktformular testen und FormSubmit per E-Mail aktivieren.
