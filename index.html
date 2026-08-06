@@ -4,114 +4,207 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CRuse Mobility – Mobilität. Neu gedacht.</title>
-  <meta name="description" content="Fahrzeugvermittlung, Leasing und Gutachterservice – transparent, unabhängig und deutschlandweit.">
-  <link rel="icon" href="cruse-logo.png">
+  <meta name="description" content="Fahrzeugvermittlung, Leasing und Gutachterservice – persönlich, unabhängig und deutschlandweit.">
+  <meta property="og:title" content="CRuse Mobility – Mobilität. Neu gedacht.">
+  <meta property="og:description" content="Fahrzeugvermittlung, Leasing und Gutachterservice – persönlich, unabhängig und deutschlandweit.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#050505">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="topbar">
-  <a class="logo" href="#start"><img src="cruse-logo.png" alt="CRuse Mobility"></a>
-  <button class="menu-toggle" aria-expanded="false" aria-controls="mainnav">☰</button>
-  <nav id="mainnav">
+<header class="site-header">
+  <a href="#start" class="brand" aria-label="CRuse Mobility Startseite">
+    <svg class="brand-logo" viewBox="0 0 460 90" role="img" aria-label="CRuse Mobility">
+      <defs>
+        <linearGradient id="gold" x1="0" x2="1">
+          <stop offset="0" stop-color="#b88a3f"/>
+          <stop offset=".5" stop-color="#ead29e"/>
+          <stop offset="1" stop-color="#c49a55"/>
+        </linearGradient>
+      </defs>
+      <path d="M18 44c0-20 16-36 36-36h56v15H55c-11 0-20 9-20 20s9 20 20 20h34v15H54c-20 0-36-15-36-34Z" fill="url(#gold)"/>
+      <path d="M98 8h44c20 0 36 15 36 35 0 13-7 25-18 31l22 4-9 12-45-18v-14h14c11 0 20-7 20-16s-9-19-20-19H98V8Z" fill="url(#gold)"/>
+      <text x="208" y="42" fill="#f7f2e8" font-size="34" font-family="Manrope, Arial" letter-spacing="10">CRUSE</text>
+      <line x1="208" y1="58" x2="255" y2="58" stroke="#caa96b" stroke-width="2"/>
+      <text x="270" y="65" fill="#d8b36c" font-size="15" font-family="Manrope, Arial" letter-spacing="7">MOBILITY</text>
+      <line x1="412" y1="58" x2="451" y2="58" stroke="#caa96b" stroke-width="2"/>
+    </svg>
+  </a>
+
+  <button class="menu-toggle" type="button" aria-controls="mainnav" aria-expanded="false">
+    <span></span><span></span><span></span>
+    <span class="sr-only">Menü öffnen</span>
+  </button>
+
+  <nav id="mainnav" class="mainnav">
+    <a href="#start">Start</a>
     <a href="#leistungen">Leistungen</a>
     <a href="#warum">Über uns</a>
     <a href="#ablauf">Ablauf</a>
     <a href="#kontakt">Kontakt</a>
-    <a class="top-cta" href="#kontakt">Anfrage starten</a>
+    <a href="#kontakt" class="nav-cta">Anfrage starten <span>→</span></a>
   </nav>
 </header>
 
 <main>
-<section class="hero" id="start">
-  <div class="hero-overlay"></div>
-  <div class="hero-grid">
-    <div class="hero-copy reveal visible">
+  <section class="hero" id="start">
+    <div class="hero-shade"></div>
+    <div class="hero-content reveal visible">
       <p class="eyebrow">Ihr persönlicher Mobilitätspartner</p>
-      <h1>Mobilität.<br><span>Neu gedacht.</span></h1>
-      <p class="lead">Fahrzeugvermittlung, Leasing und Gutachterservice – transparent, unabhängig und deutschlandweit.</p>
-      <div class="cta-row">
-        <a class="button gold" href="#kontakt">Anfrage starten <span>→</span></a>
-        <a class="button outline" href="#leistungen">Leistungen ansehen <span>→</span></a>
+      <h1>Mobilität.<br><em>Neu gedacht.</em></h1>
+      <p class="hero-copy">Fahrzeugvermittlung, Leasing und Gutachterservice – transparent, unabhängig und deutschlandweit.</p>
+      <div class="hero-actions">
+        <a href="#kontakt" class="button gold">Anfrage starten <span>→</span></a>
+        <a href="#leistungen" class="button outline">Leistungen ansehen <span>→</span></a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="services reveal" id="leistungen">
-  <article><span class="num">01</span><h3>Fahrzeugvermittlung</h3><p>Wir finden dein Wunschfahrzeug – schnell, zuverlässig und passend zu deinem Budget.</p><a href="#kontakt">→</a></article>
-  <article><span class="num">02</span><h3>Leasing</h3><p>Maßgeschneiderte Leasingangebote für Privat- und Geschäftskunden.</p><a href="#kontakt">→</a></article>
-  <article><span class="num">03</span><h3>Gutachterservice</h3><p>Unabhängige Gutachtervermittlung nach einem unverschuldeten Unfall.</p><a href="#kontakt">→</a></article>
-  <article><span class="num">04</span><h3>Persönliche Betreuung</h3><p>Ein fester Ansprechpartner von der ersten Anfrage bis zur Lösung.</p><a href="#kontakt">→</a></article>
-</section>
+  <section class="trust-row reveal" aria-label="Vorteile">
+    <article>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3Z"/></svg>
+      <div><strong>Persönlich</strong><span>Ihr Ansprechpartner von Anfang bis Ende.</span></div>
+    </article>
+    <article>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 7v5c0 4.6 3.2 8.3 8 9.8 4.8-1.5 8-5.2 8-9.8V7l-8-4Z"/></svg>
+      <div><strong>Unabhängig</strong><span>Hersteller- und markenunabhängige Beratung.</span></div>
+    </article>
+    <article>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-4.1 7-11a7 7 0 1 0-14 0c0 6.9 7 11 7 11Zm0-8.5A2.5 2.5 0 1 1 12 7a2.5 2.5 0 0 1 0 5.5Z"/></svg>
+      <div><strong>Deutschlandweit</strong><span>Bundesweite Vermittlung und Betreuung.</span></div>
+    </article>
+    <article>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 15 8l7 .8-5 4.7 1.5 6.8L12 17l-6.5 3.3L7 13.5 2 8.8 9 8l3-6Z"/></svg>
+      <div><strong>Erfahren</strong><span>Klare Prozesse und ein starkes Netzwerk.</span></div>
+    </article>
+  </section>
 
-<section class="why reveal" id="warum">
-  <div class="why-image"><img src="car-detail.jpg" alt="Schwarzes Sportcoupé"></div>
-  <div class="why-copy">
-    <p class="eyebrow">Warum CRuse Mobility?</p>
-    <h2>Persönlich. Unabhängig.<br>Deutschlandweit.</h2>
-    <div class="checks">
-      <span>Persönlicher Ansprechpartner</span>
-      <span>Transparente Prozesse</span>
-      <span>Markenunabhängige Beratung</span>
-      <span>Schnelle Rückmeldung</span>
-      <span>Deutschlandweite Vermittlung</span>
-      <span>Klare Kommunikation</span>
+  <section class="section services reveal" id="leistungen">
+    <header class="section-heading">
+      <p class="eyebrow">Unsere Leistungen</p>
+      <h2>Alles aus einer Hand.</h2>
+      <span class="gold-line"></span>
+    </header>
+
+    <div class="service-grid">
+      <article class="service-card">
+        <div class="service-image service-image-one"></div>
+        <div class="service-content">
+          <span class="service-number">01</span>
+          <h3>Fahrzeugvermittlung</h3>
+          <p>Wir finden das passende Fahrzeug – individuell, transparent und zu überzeugenden Konditionen.</p>
+          <a href="#kontakt">Mehr erfahren <span>→</span></a>
+        </div>
+      </article>
+      <article class="service-card">
+        <div class="service-image service-image-two"></div>
+        <div class="service-content">
+          <span class="service-number">02</span>
+          <h3>Leasingvermittlung</h3>
+          <p>Maßgeschneiderte Leasingangebote für Privat- und Gewerbekunden – flexibel und fair.</p>
+          <a href="#kontakt">Mehr erfahren <span>→</span></a>
+        </div>
+      </article>
+      <article class="service-card">
+        <div class="service-image service-image-three"></div>
+        <div class="service-content">
+          <span class="service-number">03</span>
+          <h3>Gutachterservice</h3>
+          <p>Unabhängige Gutachtervermittlung – schnell, präzise und zuverlässig.</p>
+          <a href="#kontakt">Mehr erfahren <span>→</span></a>
+        </div>
+      </article>
     </div>
-  </div>
-  <aside class="stats">
-    <div><strong>100 %</strong><span>markenunabhängig</span></div>
-    <div><strong>1</strong><span>fester Ansprechpartner</span></div>
-    <div><strong>DE</strong><span>deutschlandweit</span></div>
-  </aside>
-</section>
+  </section>
 
-<section class="flow reveal" id="ablauf">
-  <p class="eyebrow">So läuft es ab</p>
-  <div class="flow-grid">
-    <article><strong>01</strong><h3>Anfrage</h3><p>Du sendest deine Anfrage über das Kontaktformular.</p></article>
-    <article><strong>02</strong><h3>Beratung</h3><p>Wir besprechen Wünsche, Budget und Anforderungen.</p></article>
-    <article><strong>03</strong><h3>Angebot</h3><p>Du erhältst passende Optionen und entscheidest in Ruhe.</p></article>
-    <article><strong>04</strong><h3>Abschluss</h3><p>Wir begleiten dich bis zur erfolgreichen Vermittlung.</p></article>
-  </div>
-</section>
+  <section class="premium-band reveal" id="warum">
+    <div class="premium-copy">
+      <p class="eyebrow">Qualität. Leidenschaft. Vertrauen.</p>
+      <h2>Hochwertige Fahrzeuge.<br>Persönliche Betreuung.<br>Maximale Sicherheit.</h2>
+      <a href="#kontakt" class="button outline compact">Mehr über uns <span>→</span></a>
+    </div>
+    <div class="premium-image" aria-hidden="true"></div>
+  </section>
 
-<section class="contact reveal" id="kontakt">
-  <div class="contact-copy">
-    <p class="eyebrow">Kontakt</p>
-    <h2>Anfrage starten.</h2>
-    <p>Beschreibe dein Anliegen. Wir melden uns persönlich und unverbindlich zurück.</p>
-    <a href="mailto:info@cruse-mobility.com">info@cruse-mobility.com</a>
-    <span>Postplatz 2 · 74564 Crailsheim</span>
-  </div>
-  <form action="https://formsubmit.co/info@cruse-mobility.com" method="POST">
-    <input type="hidden" name="_subject" value="Neue Anfrage über cruse-mobility.de">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
-    <div class="field-row">
-      <label>Name<input name="Name" required></label>
-      <label>E-Mail<input type="email" name="E-Mail" required></label>
+  <section class="section process reveal" id="ablauf">
+    <header class="section-heading left">
+      <p class="eyebrow">So läuft es ab</p>
+      <h2>Vier klare Schritte.</h2>
+    </header>
+    <div class="process-grid">
+      <article><strong>01</strong><h3>Anfrage</h3><p>Sie schildern Ihr Anliegen über das Kontaktformular.</p></article>
+      <article><strong>02</strong><h3>Beratung</h3><p>Wir besprechen Ihre Wünsche, Ihr Budget und Ihre Anforderungen.</p></article>
+      <article><strong>03</strong><h3>Angebot</h3><p>Sie erhalten passende Optionen und entscheiden in Ruhe.</p></article>
+      <article><strong>04</strong><h3>Abschluss</h3><p>Wir begleiten Sie bis zur erfolgreichen Vermittlung.</p></article>
     </div>
-    <div class="field-row">
-      <label>Telefon<input type="tel" name="Telefon"></label>
-      <label>Anliegen<select name="Anliegen" required><option value="">Bitte auswählen</option><option>Fahrzeugvermittlung</option><option>Leasing</option><option>Gutachterservice</option><option>Kooperation</option><option>Sonstiges</option></select></label>
+  </section>
+
+  <section class="contact reveal" id="kontakt">
+    <div class="contact-copy">
+      <p class="eyebrow">Kontakt</p>
+      <h2>Lassen Sie uns über Ihre Wünsche sprechen.</h2>
+      <p>Wir melden uns innerhalb von 24 Stunden persönlich bei Ihnen.</p>
+      <a href="mailto:info@cruse-mobility.com">info@cruse-mobility.com</a>
+      <span>Postplatz 2 · 74564 Crailsheim</span>
     </div>
-    <label>Nachricht<textarea name="Nachricht" rows="6" required></textarea></label>
-    <label class="consent"><input type="checkbox" required><span>Ich stimme der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage zu.</span></label>
-    <button class="button gold submit" type="submit">Anfrage senden</button>
-    <p class="note">Beim ersten Test sendet FormSubmit eine Aktivierungs-E-Mail an info@cruse-mobility.com.</p>
-  </form>
-</section>
+
+    <form action="https://formsubmit.co/info@cruse-mobility.com" method="POST">
+      <input type="hidden" name="_subject" value="Neue Anfrage über cruse-mobility.de">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://cruse-mobility.de/danke.html">
+      <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off">
+
+      <div class="field-row">
+        <label>Ihr Name<input type="text" name="Name" required autocomplete="name"></label>
+        <label>Telefonnummer<input type="tel" name="Telefon" autocomplete="tel"></label>
+      </div>
+      <div class="field-row">
+        <label>E-Mail-Adresse<input type="email" name="E-Mail" required autocomplete="email"></label>
+        <label>Wofür interessieren Sie sich?
+          <select name="Anliegen" required>
+            <option value="">Bitte auswählen</option>
+            <option>Fahrzeugvermittlung</option>
+            <option>Leasingvermittlung</option>
+            <option>Gutachterservice</option>
+            <option>Kooperation</option>
+            <option>Sonstiges</option>
+          </select>
+        </label>
+      </div>
+      <label>Ihre Nachricht<textarea name="Nachricht" rows="6" required></textarea></label>
+      <label class="consent">
+        <input type="checkbox" required>
+        <span>Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Daten gemäß unserer Datenschutzerklärung zu.</span>
+      </label>
+      <button class="button gold submit" type="submit">Anfrage senden <span>→</span></button>
+    </form>
+  </section>
 </main>
 
-<footer>
-  <div><img src="cruse-logo.png" alt="CRuse Mobility"><span>Mobilität. Neu gedacht.</span></div>
-  <div><strong>Kontakt</strong><a href="mailto:info@cruse-mobility.com">info@cruse-mobility.com</a><span>Postplatz 2</span><span>74564 Crailsheim</span></div>
+<footer class="footer">
+  <div class="footer-brand">
+    <svg class="brand-logo footer-logo" viewBox="0 0 460 90" aria-hidden="true">
+      <defs><linearGradient id="gold2" x1="0" x2="1"><stop offset="0" stop-color="#b88a3f"/><stop offset=".5" stop-color="#ead29e"/><stop offset="1" stop-color="#c49a55"/></linearGradient></defs>
+      <path d="M18 44c0-20 16-36 36-36h56v15H55c-11 0-20 9-20 20s9 20 20 20h34v15H54c-20 0-36-15-36-34Z" fill="url(#gold2)"/>
+      <path d="M98 8h44c20 0 36 15 36 35 0 13-7 25-18 31l22 4-9 12-45-18v-14h14c11 0 20-7 20-16s-9-19-20-19H98V8Z" fill="url(#gold2)"/>
+      <text x="208" y="42" fill="#f7f2e8" font-size="34" font-family="Manrope, Arial" letter-spacing="10">CRUSE</text>
+      <line x1="208" y1="58" x2="255" y2="58" stroke="#caa96b" stroke-width="2"/>
+      <text x="270" y="65" fill="#d8b36c" font-size="15" font-family="Manrope, Arial" letter-spacing="7">MOBILITY</text>
+      <line x1="412" y1="58" x2="451" y2="58" stroke="#caa96b" stroke-width="2"/>
+    </svg>
+    <p>Mobilität. Neu gedacht.</p>
+  </div>
+  <div><strong>Navigation</strong><a href="#start">Start</a><a href="#leistungen">Leistungen</a><a href="#warum">Über uns</a><a href="#ablauf">Ablauf</a><a href="#kontakt">Kontakt</a></div>
+  <div><strong>Leistungen</strong><a href="#kontakt">Fahrzeugvermittlung</a><a href="#kontakt">Leasingvermittlung</a><a href="#kontakt">Gutachterservice</a></div>
   <div><strong>Rechtliches</strong><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
-  <p>© <span id="year"></span> CRuse Mobility</p>
+  <p class="copyright">© <span id="year"></span> CRuse Mobility</p>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
